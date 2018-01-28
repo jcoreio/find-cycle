@@ -1,33 +1,15 @@
-# agnostic-library-skeleton
+# find-cycles
 
-[![Build Status](https://travis-ci.org/jedwards1211/agnostic-library-skeleton.svg?branch=master)](https://travis-ci.org/jedwards1211/agnostic-library-skeleton)
-[![Coverage Status](https://codecov.io/gh/jedwards1211/agnostic-library-skeleton/branch/master/graph/badge.svg)](https://codecov.io/gh/jedwards1211/agnostic-library-skeleton)
+[![Build Status](https://travis-ci.org/jcoreio/find-cycles.svg?branch=master)](https://travis-ci.org/jcoreio/find-cycles)
+[![Coverage Status](https://codecov.io/gh/jcoreio/find-cycles/branch/master/graph/badge.svg)](https://codecov.io/gh/jcoreio/find-cycles)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-This is my personal skeleton for creating an untranspiled JS library npm package.  You are welcome to use it.
+find and identify cycles in directed graphs
 
-## Quick start
+## Usage
 
 ```sh
-npm i -g howardroark/pollinate
-pollinate https://github.com/jedwards1211/agnostic-library-skeleton.git --keep-history --name <package name> --author <your name> --organization <github organization> --description <package description>
-cd <package name>
-npm i
+npm install --save find-cycles
 ```
-
-## Tools used
-
-* mocha
-* chai
-* istanbul
-* nyc
-* eslint
-* eslint-watch
-* flow
-* flow-watch
-* husky
-* semantic-release
-* Travis CI
-* Coveralls
 

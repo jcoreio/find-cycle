@@ -1,7 +1,7 @@
 {
-  "name": "agnostic-library-skeleton",
-  "version": "1.0.0",
-  "description": "my skeleton for transpiler-free JS packages",
+  "name": "find-cycles",
+  "version": "0.0.0-development",
+  "description": "find and identify cycles in directed graphs",
   "main": "index.js",
   "author": "Andy Edwards",
   "license": "MIT",
@@ -39,15 +39,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jedwards1211/agnostic-library-skeleton.git"
+    "url": "https://github.com/jcoreio/find-cycles.git"
   },
   "keywords": [
     "skeleton"
   ],
   "bugs": {
-    "url": "https://github.com/jedwards1211/agnostic-library-skeleton/issues"
+    "url": "https://github.com/jcoreio/find-cycles/issues"
   },
-  "homepage": "https://github.com/jedwards1211/agnostic-library-skeleton#readme",
+  "homepage": "https://github.com/jcoreio/find-cycles#readme",
   "devDependencies": {
     "@commitlint/cli": "^6.0.2",
     "@commitlint/config-conventional": "^6.0.2",
