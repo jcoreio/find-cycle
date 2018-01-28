@@ -1,0 +1,7 @@
+// @flow
+
+declare module.exports: <N>(
+  startNodes: Iterable<N>,
+  getConnectedNodes: (node: N) => ?(Iterator<N> | Iterable<N>)
+) => ?Array<N>
+

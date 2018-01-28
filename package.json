@@ -1,8 +1,7 @@
 {
-  "name": "find-cycles",
+  "name": "find-cycle",
   "version": "0.0.0-development",
-  "description": "find and identify cycles in directed graphs",
-  "main": "index.js",
+  "description": "find and identify a cycle in a directed graph",
   "author": "Andy Edwards",
   "license": "MIT",
   "scripts": {
@@ -39,15 +38,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jcoreio/find-cycles.git"
+    "url": "https://github.com/jcoreio/find-cycle.git"
   },
   "keywords": [
     "skeleton"
   ],
   "bugs": {
-    "url": "https://github.com/jcoreio/find-cycles/issues"
+    "url": "https://github.com/jcoreio/find-cycle/issues"
   },
-  "homepage": "https://github.com/jcoreio/find-cycles#readme",
+  "homepage": "https://github.com/jcoreio/find-cycle#readme",
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^6.0.2",
     "@commitlint/config-conventional": "^6.0.2",

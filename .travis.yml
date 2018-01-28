@@ -11,7 +11,7 @@ node_js:
 install:
   - yarn install --ignore-engines --check-files --frozen-lockfile
 script:
-  - yarn run prepublishOnly
+  - npm run prepublishOnly
 after_success:
   - npm run codecov
   - npm run travis-deploy-once "npm run semantic-release"
