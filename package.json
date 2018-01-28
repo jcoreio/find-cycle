@@ -41,7 +41,20 @@
     "url": "https://github.com/jcoreio/find-cycle.git"
   },
   "keywords": [
-    "skeleton"
+    "cycle",
+    "cycles",
+    "cyclic",
+    "graph",
+    "graphs",
+    "directed",
+    "directed-graph",
+    "directed-graphs",
+    "find",
+    "finder",
+    "search",
+    "detect",
+    "detector",
+    "detection"
   ],
   "bugs": {
     "url": "https://github.com/jcoreio/find-cycle/issues"
