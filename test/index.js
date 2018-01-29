@@ -21,6 +21,14 @@ describe('directed', function () {
     expect(findDirectedCycle([7], node => edges[node])).to.deep.equal([2, 3, 4])
     expect(findDirectedCycle([9], node => edges[node])).to.deep.equal([9, 10, 11])
   })
+  it('finds a cycle from a node to itself', function () {
+    const edges = {
+      1: [2],
+      2: [3],
+      3: [3],
+    }
+    expect(findDirectedCycle([1], node => edges[node])).to.deep.equal([3])
+  })
   it('allows getConnectedNodes to return an iterator', function () {
     const edges = {
       1: [2],
