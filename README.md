@@ -75,7 +75,7 @@ const edges = {
 const startNodes = [1]
 const getConnectedNodes = node => edges[node]
 
-expect(findCycle([1], getConnectedNodes)).to.deep.equal([2, 3, 4])
+expect(findCycle(startNodes, getConnectedNodes)).to.deep.equal([2, 3, 4])
 ```
 
 ### With Sets/Maps
