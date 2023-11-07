@@ -1,9 +1,12 @@
 [ignore]
 <PROJECT_ROOT>/node_modules/.*/tests?/.*\.json
+<PROJECT_ROOT>/dist/.*
+.*/malformed_package_json/.*
 
 [include]
 ./*.js
 ./test
+./src
 
 [libs]
 
@@ -11,4 +14,3 @@
 module.system=node
 esproposal.class_static_fields=enable
 esproposal.class_instance_fields=enable
-

@@ -1,9 +1,6 @@
 'use strict'
 
-function findDirectedCycle(
-  startNodes,
-  getConnectedNodes
-) {
+function findDirectedCycle(startNodes, getConnectedNodes) {
   function connected(node) {
     var thing = getConnectedNodes(node)
     if (thing == null) return [][Symbol.iterator]()
@@ -51,4 +48,3 @@ function findDirectedCycle(
 }
 
 module.exports = findDirectedCycle
-

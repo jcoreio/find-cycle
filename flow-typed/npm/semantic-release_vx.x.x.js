@@ -14,7 +14,7 @@
  */
 
 declare module 'semantic-release' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 /**
@@ -23,100 +23,100 @@ declare module 'semantic-release' {
  * needed.
  */
 declare module 'semantic-release/bin/semantic-release' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'semantic-release/cli' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'semantic-release/lib/debug' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'semantic-release/lib/get-commits' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'semantic-release/lib/get-config' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'semantic-release/lib/get-next-version' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'semantic-release/lib/git' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'semantic-release/lib/hide-sensitive' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'semantic-release/lib/logger' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'semantic-release/lib/plugins/definitions' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'semantic-release/lib/plugins/index' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'semantic-release/lib/plugins/normalize' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 declare module 'semantic-release/lib/plugins/pipeline' {
-  declare module.exports: any;
+  declare module.exports: any
 }
 
 // Filename aliases
 declare module 'semantic-release/bin/semantic-release.js' {
-  declare module.exports: $Exports<'semantic-release/bin/semantic-release'>;
+  declare module.exports: $Exports<'semantic-release/bin/semantic-release'>
 }
 declare module 'semantic-release/cli.js' {
-  declare module.exports: $Exports<'semantic-release/cli'>;
+  declare module.exports: $Exports<'semantic-release/cli'>
 }
 declare module 'semantic-release/index' {
-  declare module.exports: $Exports<'semantic-release'>;
+  declare module.exports: $Exports<'semantic-release'>
 }
 declare module 'semantic-release/index.js' {
-  declare module.exports: $Exports<'semantic-release'>;
+  declare module.exports: $Exports<'semantic-release'>
 }
 declare module 'semantic-release/lib/debug.js' {
-  declare module.exports: $Exports<'semantic-release/lib/debug'>;
+  declare module.exports: $Exports<'semantic-release/lib/debug'>
 }
 declare module 'semantic-release/lib/get-commits.js' {
-  declare module.exports: $Exports<'semantic-release/lib/get-commits'>;
+  declare module.exports: $Exports<'semantic-release/lib/get-commits'>
 }
 declare module 'semantic-release/lib/get-config.js' {
-  declare module.exports: $Exports<'semantic-release/lib/get-config'>;
+  declare module.exports: $Exports<'semantic-release/lib/get-config'>
 }
 declare module 'semantic-release/lib/get-next-version.js' {
-  declare module.exports: $Exports<'semantic-release/lib/get-next-version'>;
+  declare module.exports: $Exports<'semantic-release/lib/get-next-version'>
 }
 declare module 'semantic-release/lib/git.js' {
-  declare module.exports: $Exports<'semantic-release/lib/git'>;
+  declare module.exports: $Exports<'semantic-release/lib/git'>
 }
 declare module 'semantic-release/lib/hide-sensitive.js' {
-  declare module.exports: $Exports<'semantic-release/lib/hide-sensitive'>;
+  declare module.exports: $Exports<'semantic-release/lib/hide-sensitive'>
 }
 declare module 'semantic-release/lib/logger.js' {
-  declare module.exports: $Exports<'semantic-release/lib/logger'>;
+  declare module.exports: $Exports<'semantic-release/lib/logger'>
 }
 declare module 'semantic-release/lib/plugins/definitions.js' {
-  declare module.exports: $Exports<'semantic-release/lib/plugins/definitions'>;
+  declare module.exports: $Exports<'semantic-release/lib/plugins/definitions'>
 }
 declare module 'semantic-release/lib/plugins/index.js' {
-  declare module.exports: $Exports<'semantic-release/lib/plugins/index'>;
+  declare module.exports: $Exports<'semantic-release/lib/plugins/index'>
 }
 declare module 'semantic-release/lib/plugins/normalize.js' {
-  declare module.exports: $Exports<'semantic-release/lib/plugins/normalize'>;
+  declare module.exports: $Exports<'semantic-release/lib/plugins/normalize'>
 }
 declare module 'semantic-release/lib/plugins/pipeline.js' {
-  declare module.exports: $Exports<'semantic-release/lib/plugins/pipeline'>;
+  declare module.exports: $Exports<'semantic-release/lib/plugins/pipeline'>
 }

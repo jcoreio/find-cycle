@@ -6,7 +6,7 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 Searches for a cycle in a directed graph, and tells you the nodes in the
-first cycle it finds.  Should work on your existing data structures
+first cycle it finds. Should work on your existing data structures
 without conversion, because it operates on `Iterables` and a
 `getConnectedNodes` adapter function that you provide.
 
@@ -38,13 +38,13 @@ const findDirectedCycle = require('find-cycle/directed')
 
 #### `startNodes: Iterable<Node>`
 
-The nodes to start the search from.  Your nodes may be of any primitive
+The nodes to start the search from. Your nodes may be of any primitive
 or object type besides `null` or `undefined`.
 
 #### `getConnectedNodes: (node: Node) => ?(Iterator<Node> | Iterable<Node>)`
 
 Given a node in your directed graph, return the nodes connected to it as
-an `Iterator` or `Iterable`.  You may return `null` or `undefined` if
+an `Iterator` or `Iterable`. You may return `null` or `undefined` if
 there are no connected nodes.
 
 ### Returns: `?Array<Node>`
@@ -73,7 +73,7 @@ const edges = {
 }
 
 const startNodes = [1]
-const getConnectedNodes = node => edges[node]
+const getConnectedNodes = (node) => edges[node]
 
 expect(findCycle(startNodes, getConnectedNodes)).to.deep.equal([2, 3, 4])
 ```

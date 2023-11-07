@@ -1,5 +1,5 @@
 const expect = require('chai').expect
-const findDirectedCycle = require('../directed')
+const findDirectedCycle = require('../src/directed')
 
 describe('directed', function () {
   it('returns an existing cycle', function () {
@@ -16,10 +16,18 @@ describe('directed', function () {
       11: [9, 8],
     }
 
-    expect(findDirectedCycle([1], node => edges[node])).to.deep.equal([2, 3, 4])
-    expect(findDirectedCycle([1, 7], node => edges[node])).to.deep.equal([2, 3, 4])
-    expect(findDirectedCycle([7], node => edges[node])).to.deep.equal([2, 3, 4])
-    expect(findDirectedCycle([9], node => edges[node])).to.deep.equal([9, 10, 11])
+    expect(findDirectedCycle([1], (node) => edges[node])).to.deep.equal([
+      2, 3, 4,
+    ])
+    expect(findDirectedCycle([1, 7], (node) => edges[node])).to.deep.equal([
+      2, 3, 4,
+    ])
+    expect(findDirectedCycle([7], (node) => edges[node])).to.deep.equal([
+      2, 3, 4,
+    ])
+    expect(findDirectedCycle([9], (node) => edges[node])).to.deep.equal([
+      9, 10, 11,
+    ])
   })
   it('finds a cycle from a node to itself', function () {
     const edges = {
@@ -27,7 +35,7 @@ describe('directed', function () {
       2: [3],
       3: [3],
     }
-    expect(findDirectedCycle([1], node => edges[node])).to.deep.equal([3])
+    expect(findDirectedCycle([1], (node) => edges[node])).to.deep.equal([3])
   })
   it('allows getConnectedNodes to return an iterator', function () {
     const edges = {
@@ -45,7 +53,7 @@ describe('directed', function () {
 
     function getConnectedNodes(node) {
       var iterator = edges[node][Symbol.iterator]()
-      return {next: iterator.next.bind(iterator)}
+      return { next: iterator.next.bind(iterator) }
     }
 
     expect(findDirectedCycle([1], getConnectedNodes)).to.deep.equal([2, 3, 4])
@@ -67,7 +75,9 @@ describe('directed', function () {
       return edges[node]
     }
 
-    expect(findDirectedCycle([9, 1], getConnectedNodes)).to.deep.equal([2, 3, 4])
+    expect(findDirectedCycle([9, 1], getConnectedNodes)).to.deep.equal([
+      2, 3, 4,
+    ])
   })
   it('returns null when no cycle is reachable from the start nodes', function () {
     const edges = {
@@ -86,10 +96,18 @@ describe('directed', function () {
       14: [12],
     }
 
-    expect(findDirectedCycle([1, 2, 3, 4, 5, 7, 8, 9, 10, 11], node => edges[node])).to.equal(null)
-    expect(findDirectedCycle([1, 7, 12], node => edges[node])).to.deep.equal([12, 13, 14])
-    expect(findDirectedCycle([1, 7, 13], node => edges[node])).to.deep.equal([13, 14, 12])
-    expect(findDirectedCycle([1, 7, 14], node => edges[node])).to.deep.equal([14, 12, 13])
+    expect(
+      findDirectedCycle([1, 2, 3, 4, 5, 7, 8, 9, 10, 11], (node) => edges[node])
+    ).to.equal(null)
+    expect(findDirectedCycle([1, 7, 12], (node) => edges[node])).to.deep.equal([
+      12, 13, 14,
+    ])
+    expect(findDirectedCycle([1, 7, 13], (node) => edges[node])).to.deep.equal([
+      13, 14, 12,
+    ])
+    expect(findDirectedCycle([1, 7, 14], (node) => edges[node])).to.deep.equal([
+      14, 12, 13,
+    ])
   })
   it('works with Maps/Sets', function () {
     const edges = new Map([
@@ -105,10 +123,17 @@ describe('directed', function () {
       [11, new Set([9, 8])],
     ])
 
-    expect(findDirectedCycle([1], node => edges.get(node))).to.deep.equal([2, 3, 4])
-    expect(findDirectedCycle([1, 7], node => edges.get(node))).to.deep.equal([2, 3, 4])
-    expect(findDirectedCycle([7], node => edges.get(node))).to.deep.equal([2, 3, 4])
-    expect(findDirectedCycle([9], node => edges.get(node))).to.deep.equal([9, 10, 11])
+    expect(findDirectedCycle([1], (node) => edges.get(node))).to.deep.equal([
+      2, 3, 4,
+    ])
+    expect(findDirectedCycle([1, 7], (node) => edges.get(node))).to.deep.equal([
+      2, 3, 4,
+    ])
+    expect(findDirectedCycle([7], (node) => edges.get(node))).to.deep.equal([
+      2, 3, 4,
+    ])
+    expect(findDirectedCycle([9], (node) => edges.get(node))).to.deep.equal([
+      9, 10, 11,
+    ])
   })
 })
-
